@@ -1,8 +1,8 @@
-var gulp        = requier('gulp'),
+var gulp        = require('gulp'),
     gulp-stylus = require('gulp-stylus');
 
 var path = {
-    'stylusFile': ['path/to/stylus/**/!(_)*.styl']
+    'stylusFile': ['app/resources/css/!(_)*.styl']
 };
 
 gulp.task('stylus', function() {
@@ -17,7 +17,7 @@ gulp.task('stylus', function() {
         .on('error', function (err) {
             console.error('Error', err.message);
         })
-        .pipe(gulp.dest("public/css"));
+        .pipe(gulp.dest("app/resources/css/"));
 });
 
 gulp.task('watch-stylus', function(){

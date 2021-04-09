@@ -13,7 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+  // 魔王降臨
 Route::get('/', 'App\Http\Controllers\uraController@index')->name('ura.index');
+Route::get('/ura','App\Http\Controllers\uraController@enter')->name('ura.enter');
+Route::get('/ura/2','App\Http\Controllers\uraController@enter2')->name('ura.enter2');
+
+// 練習の姿
+Route::get('/index','App\Http\Controllers\AnotherController@index')->name('another.index');
+
+
+// 本来の姿
 
 Route::get('/folders/{id}/tasks', 'App\Http\Controllers\TaskController@index')->name('tasks.index');
 

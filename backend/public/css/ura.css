@@ -1,0 +1,9 @@
+.yokuzo {
+  color: black;
+}
+.kokomade {
+  height: 500px;
+  background-color: #f00;
+  display: flex;
+  justify-content: center;
+}
